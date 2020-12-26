@@ -1,0 +1,28 @@
+{
+  "name": "tailwind-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for frontend development based on TailwindCSS",
+  "main": "",
+  "scripts": {
+    "build:css": "postcss build/assets/css/tailwind.css -o public/assets/css/style.css",
+    "build:serve": "browser-sync start --server './public' --files './public'",
+    "prod:css": "NODE_ENV=production postcss build/assets/css/tailwind.css -o public/assets/css/style.css",
+    "prod:minify": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "Nicolas Rollier",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.1.0",
+    "clean-css": "^4.2.3",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
