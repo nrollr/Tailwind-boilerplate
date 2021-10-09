@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ADD CUSTOM FONT
+@layer base {
+	@font-face {
+		font-family: 'PT Serif';
+		font-style: normal;
+		font-weight: 400;
+		src: local(''),
+				url('../fonts/pt-serif-v12-latin-regular.woff2') format('woff2'),
+				url('../fonts/pt-serif-v12-latin-regular.woff') format('woff');
+		font-display: swap;
+	}
+}
+ */
