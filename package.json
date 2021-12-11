@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "build:css": "npx tailwindcss -i ./build/tailwind.css -o ./public/assets/css/style.css --watch",
-    "build:minify": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css",
+    "build:minify": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css --watch",
     "build:run": "concurrently \"npm run build:css\" \"npm run build:minify\"",
     "build:serve": "browser-sync start --server './public' --files './public'"
   },
@@ -15,12 +15,10 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
+    "browser-sync": "^2.27.7",
     "clean-css": "^5.2.2",
     "clean-css-cli": "^5.5.0",
     "concurrently": "^6.4.0",
     "tailwindcss": "^3.0.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.27.7"
   }
 }
