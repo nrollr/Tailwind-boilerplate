@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ['./public/**/*.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./public/**/*.html'],
   theme: {
     extend: {},
   },
@@ -8,7 +7,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
   ],

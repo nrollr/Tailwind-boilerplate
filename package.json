@@ -4,24 +4,19 @@
   "description": "A boilerplate for frontend development based on TailwindCSS",
   "main": "",
   "scripts": {
-    "build:css": "postcss build/assets/css/tailwind.css -o public/assets/css/style.css",
+    "build:css": "npx tailwindcss -i ./build/tailwind.css -o ./public/assets/css/style.css --watch",
     "build:serve": "browser-sync start --server './public' --files './public'",
-    "prod:purge": "NODE_ENV=production postcss build/assets/css/tailwind.css -o public/assets/css/style.css",
     "prod:minify": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css"
   },
   "keywords": [],
   "author": "Nicolas Rollier",
   "license": "MIT",
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.3.0",
-    "@tailwindcss/forms": "^0.3.4",
-    "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
     "clean-css": "^5.2.2",
-    "clean-css-cli": "^5.4.2",
-    "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19"
+    "clean-css-cli": "^5.5.0",
+    "tailwindcss": "^3.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.7"
