@@ -1,24 +1,24 @@
 {
   "name": "tailwind-boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate for frontend development based on TailwindCSS",
+  "description": "A boilerplate based on TailwindCSS",
   "main": "",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./build/tailwind.css -o ./public/assets/css/style.css --watch",
-    "build:minify": "cleancss -o public/assets/css/style.min.css public/assets/css/style.css --watch",
+    "css:global": "npx tailwindcss -i ./build/global.css -o ./public/assets/css/style.css --watch --minify",
+    "css:project": "npx tailwindcss -i ./build/project.css -o ./public/project/assets/css/style.css --watch --minify",
     "build:serve": "browser-sync start --server './public' --files './public'",
-    "build:run": "npm-run-all --parallel build:css build:minify build:serve"
+    "build:run": "npm-run-all --parallel css:global build:serve"
   },
   "keywords": [],
   "author": "Nicolas Rollier",
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.8",
     "browser-sync": "^2.27.10",
     "clean-css": "^5.3.1",
     "clean-css-cli": "^5.6.1",
     "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.2.0"
+    "tailwindcss": "^3.2.4"
   }
 }

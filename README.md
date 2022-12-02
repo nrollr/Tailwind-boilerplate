@@ -1,16 +1,17 @@
 # Tailwind-boilerplate
-A boilerplate for frontend development based on TailwindCSS
 
-Simple boilerplate to get started on a new TailwindCSS based project. It includes additional plugins to support TailwindUI :
-* `@tailwindcss/aspect-ratio`
+A simple boilerplate to get started on new TailwindCSS based projects. Additional plugins included in the `package.json`, yet still need to be enabled in the tailwind config file:
 * `@tailwindcss/forms`
 * `@tailwindcss/typography`
 
-Various npm scripts have been defined to support the process 
-All scripts are defined in `package.json`:
-* __build:css__ : generates the css file with all permutations for all utilities
-* __build:serve__ : launches [Browsersync](https://browsersync.io/) for live reloads during the development process
-* __prod:css__ : generates a purged css file
-* __prod:minify__: generates a minified version of the purged css file
+It also leverages the `@config` directive available since [Tailwind v3.2](https://tailwindcss.com/blog/tailwindcss-v3-2#multiple-config-files-in-one-project-using-config) to build and support multiple stylesheets
 
-Clone the git repository and run `npm install` 
+Various npm scripts have been defined to support the process
+All scripts are defined in `package.json`:
+* __css:global__ : generates and minifies the css file based on the parameters found in `tailwind-global.config.js`
+* __css:project__ : generates and minifies the css file based on the parameters found in `tailwind-project.config.js`
+* __build:serve__ : launches [Browsersync](https://browsersync.io/) for live reloads during the development process
+* __build:run__ : runs all of the scripts mentioned above in parallel
+
+
+Clone the git repository and run `npm install`
