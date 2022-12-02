@@ -8,8 +8,8 @@ It also leverages the `@config` directive available since [Tailwind v3.2](https:
 
 Various npm scripts have been defined to support the process
 All scripts are defined in `package.json`:
-* __css:global__ : generates and minifies the css file based on the parameters found in `tailwind-global.config.js`
-* __css:project__ : generates and minifies the css file based on the parameters found in `tailwind-project.config.js`
+* __css:global__ : generates and minifies the css file based `tailwind-global.config.js`
+* __css:project__ : generates and minifies the css file based `tailwind-project.config.js`
 * __build:serve__ : launches [Browsersync](https://browsersync.io/) for live reloads during the development process
 * __build:run__ : runs all of the scripts mentioned above in parallel
 
