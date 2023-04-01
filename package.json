@@ -15,10 +15,10 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
-    "browser-sync": "^2.27.12",
+    "browser-sync": "^2.29.1",
     "clean-css": "^5.3.2",
     "clean-css-cli": "^5.6.2",
     "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.3.1"
   }
 }
